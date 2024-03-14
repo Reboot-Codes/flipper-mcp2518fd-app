@@ -1,7 +1,7 @@
 cargo-features = ["different-binary-name"]
 
 [package]
-name = "{{project-name}}"
+name = "flipper-mcp2518fd-app"
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.64.0"
@@ -11,8 +11,8 @@ autotests = false
 autobenches = false
 
 [[bin]]
-name = "{{project-name}}"
-filename = "{{project-name}}.fap"
+name = "flipper-mcp2518fd-app"
+filename = "flipper-mcp2518fd-app.fap"
 bench = false
 test = false
 
