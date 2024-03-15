@@ -4,7 +4,7 @@ cargo-features = ["different-binary-name"]
 name = "flipper-mcp2518fd-app"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.64.0"
+rust-version = "1.70.0"
 autobins = false
 autoexamples = false
 autotests = false
@@ -17,6 +17,8 @@ bench = false
 test = false
 
 [dependencies]
-flipperzero = { version = "0.11.0" }
-flipperzero-sys = { version = "0.11.0" }
-flipperzero-rt = { version = "0.11.0" }
+flipperzero = { path = "../flipperzero/crates/flipperzero" }
+flipperzero-sys = { path = "../flipperzero/crates/sys" }
+flipperzero-rt = { path = "../flipperzero/crates/rt" }
+flipperzero-alloc = { path = "../flipperzero/crates/alloc" }
+ufmt = "0.2.0"

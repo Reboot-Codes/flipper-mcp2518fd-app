@@ -48,15 +48,15 @@ name = "flipper-mcp2518fd-app"
 version = "0.1.0"
 dependencies = [
  "flipperzero",
+ "flipperzero-alloc",
  "flipperzero-rt",
  "flipperzero-sys",
+ "ufmt",
 ]
 
 [[package]]
 name = "flipperzero"
 version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c4156bf3f403c8a8b9b175a338d2d07f6de4f31be30a3e7a249db7eb6cf22b95"
 dependencies = [
  "bitflags",
  "digest",
@@ -68,10 +68,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "flipperzero-alloc"
+version = "0.11.0"
+dependencies = [
+ "flipperzero-sys",
+]
+
+[[package]]
 name = "flipperzero-rt"
 version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6917e7b727a24872111f865acef3bda3a9101154cdf8fe23709e11ae7778c914"
 dependencies = [
  "flipperzero-sys",
 ]
@@ -79,8 +84,6 @@ dependencies = [
 [[package]]
 name = "flipperzero-sys"
 version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "450b0ecaf76cc92745e0ab9b91c0a6a392e6b9af7370f555faf8719ce457e1e0"
 dependencies = [
  "ufmt",
 ]
@@ -88,8 +91,6 @@ dependencies = [
 [[package]]
 name = "flipperzero-test"
 version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8bb722672d73e770f99553cef393a1d14b5658cbf4d88259f6a9186008906f68"
 dependencies = [
  "flipperzero-sys",
  "flipperzero-test-macros",
@@ -99,8 +100,6 @@ dependencies = [
 [[package]]
 name = "flipperzero-test-macros"
 version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ef0ec6c09e1879c1feb139e9138dd1181bcaca444b42570f4d2c0af09415f5eb"
 dependencies = [
  "proc-macro2",
  "quote",

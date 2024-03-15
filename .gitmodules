@@ -1,0 +1,3 @@
+[submodule "flipperzero"]
+	path = flipperzero
+	url = https://github.com/flipperzero-rs/flipperzero
