@@ -14,6 +14,8 @@ jobs:
         working-directory: ${{ inputs.target }}
     steps:
     - uses: actions/checkout@v3
+    - name: Get Deps
+      run: git submodule update --init --recursive
     - name: Setup Toolchain
       run: rustup component add llvm-tools
     - run: sudo apt install libudev-dev
